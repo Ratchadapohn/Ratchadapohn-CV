@@ -1,0 +1,127 @@
+#projects {
+  position: relative;
+  margin-bottom: 100px;
+
+  width: 100%;
+  padding: 30px;
+  margin-top: 70px;
+}
+.text-p1 {
+  margin-bottom: 4px;
+  text-align: center;
+}
+.title {
+  color: black;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 60px;
+}
+.color-container {
+  color: rgb(163, 163, 163);
+  background-color: rgb(250, 250, 250);
+}
+.about-container-ex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  gap: 20px;
+  margin: 0 auto;
+}
+.article-container img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px gray;
+}
+
+.project-title {
+  margin-bottom: 10px;
+  color: rgb(52, 50, 50);
+  font-weight: 500;
+}
+.detail-container-pro {
+  padding: 30px;
+  margin: 10px 0;
+  justify-content: center;
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 2rem;
+  border: 1px solid rgb(153, 153, 153);
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.ex-detail-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 80%;
+  gap: 50px;
+}
+
+.icon-container button {
+  font-weight: 300;
+  transition: all 0.3s ease;
+  padding: 10px 24px;
+  font-size: 12px;
+  color: aliceblue;
+  width: auto;
+  margin-left: 10px;
+  background-color: rgb(224, 214, 214);
+  border-radius: 2rem;
+  border: 1px solid rgb(136, 133, 133);
+  cursor: pointer;
+}
+
+.icon-container button:hover {
+  background-color: rgb(106, 103, 103);
+  color: white;
+  text-decoration: none;
+  border: 0.1rem solid rgb(255, 255, 255);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.article-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
+  width: 80%;
+  transition: all 0.3s ease;
+}
+
+.article-container:hover {
+  transform: translateY(-2px);
+}
+.article-container img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1200px) {
+  .ex-detail-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+  .article-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  #projects {
+    padding: 20px;
+  }
+  .detail-container-ex {
+    width: 80%;
+  }
+  #projects .title {
+    font-size: 30px;
+  }
+}

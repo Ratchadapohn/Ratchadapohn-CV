@@ -1,0 +1,144 @@
+#contact {
+  background-color: rgb(53, 53, 53);
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0;
+  padding-bottom: 50px;
+  position: relative;
+  transition: 0.4s;
+}
+.text-1 {
+  align-self: center;
+  color: white;
+  margin: 0 auto;
+}
+.contact-container {
+  text-align: center;
+  gap: 20px;
+}
+.title-contact {
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.email p {
+  font-weight: 300;
+  color: rgb(97, 91, 91);
+  font-size: 23px;
+  background-color: antiquewhite;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hotmail {
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.hotmail:hover {
+  text-decoration: underline;
+}
+.email {
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+.tel {
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+.tel p {
+  font-weight: 300;
+  color: rgb(97, 91, 91);
+  font-size: 20px;
+  background-color: antiquewhite;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tel a {
+  text-decoration: none;
+}
+.call {
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.call a:hover {
+  text-decoration: underline;
+}
+.call a {
+  color: white;
+}
+.sub-contact-container {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  padding: 20px 50px;
+  margin-bottom: 40px;
+  flex: 1;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(153, 153, 153);
+  text-align: center;
+  padding: 20px;
+}
+.underline {
+  border-top: 2px solid rgb(133, 129, 129);
+  width: 100%;
+  margin: 60px 0;
+  font-weight: 100;
+  padding: 10px;
+  border: none;
+}
+.copyright {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 70px;
+}
+.backhome a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-size: 40px;
+  padding: 30px;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .sub-contact-container {
+    display: grid;
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .backhome a {
+    font-size: 19px;
+  }
+  .copyright {
+    font-size: 8px;
+  }
+  .title-contact {
+    font-size: 29px;
+  }
+  .hotmail {
+    font-size: 13px;
+  }
+  .call {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,100 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  height: 70vh;
+  margin: 0 10px;
+  box-sizing: border-box;
+  min-height: fit-content;
+  gap: 5rem;
+  margin-bottom: 90px;
+}
+.profile-container img {
+  max-width: 450px;
+  max-height: 450px;
+  border-radius: 100%;
+  margin: auto;
+  box-shadow: 2px 0.5px 1px rgb(99, 97, 97);
+}
+.download-cv {
+  cursor: pointer;
+}
+.profile-text {
+  align-items: center;
+  text-align: center;
+}
+.text p {
+  font-weight: 600;
+}
+.text .text-p1 {
+  font-size: 18px;
+}
+.text .text-p2 {
+  font-size: 23px;
+}
+.text .title {
+  font-size: 37px;
+}
+.button-container {
+  margin-top: 25px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+.button-container button {
+  font-weight: 300;
+  transition: all 300ms ease;
+  padding: 19px;
+  width: 8rem;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem soid;
+}
+#social-container {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 70px;
+  cursor: pointer;
+}
+#social-container p {
+  font-size: 40px;
+}
+.button-container button:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+.contact {
+  background: none;
+  cursor: pointer;
+}
+.contact button {
+  cursor: pointer;
+}
+.contact:hover {
+  border: rgb(255 255 255) 0.1 rem solid;
+}
+@media (max-width: 1200px) {
+  .profile-container img {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+  }
+  .profile {
+    display: grid;
+  }
+  .text .title {
+    font-size: 23px;
+  }
+  .text .text-p2 {
+    font-size: 13px;
+  }
+  .button-container button {
+    padding: 5px;
+  }
+  #social-container {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,144 @@
+.navbar,
+.header-link {
+  display: flex;
+}
+
+.navbar {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vw;
+  transition: all 30s ease;
+}
+
+.header-link {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.name {
+  font-size: 45px;
+}
+
+.hambergurToggle {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.hambergurMenu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hambergurIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+  color: white;
+  font-weight: 100;
+}
+
+.hambergurIcon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.hambergurIcon.open span:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+}
+
+.hambergurIcon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hambergurIcon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -8px;
+}
+.menuLink ul {
+  display: none;
+}
+.menuLink {
+  display: none;
+  position: absolute;
+  top: 150px;
+  right: 25px;
+  transform: translateY(-20px);
+  opacity: 0;
+  overflow: hidden;
+  transition: transform 1s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.8s ease;
+  width: 100%;
+}
+
+.menuLink.active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transform: translateY(0);
+  opacity: 1;
+}
+.hambergurIcon button {
+  border: none;
+  font-size: 30px;
+  padding: 10px 5px;
+  cursor: pointer;
+  background: none;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+  .name {
+    font-size: 25px;
+  }
+  .hambergurToggle {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .menuLink {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .menuLink.active ul {
+    display: grid;
+    list-style: none;
+    transition: all 0.5s ease-in-out;
+    justify-content: start;
+    align-items: start;
+    background-color: rgb(211, 200, 192);
+    padding: 5px;
+    border-radius: 2px;
+  }
+
+  .menuLink.active ul a:hover {
+    color: rgb(151, 120, 49);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

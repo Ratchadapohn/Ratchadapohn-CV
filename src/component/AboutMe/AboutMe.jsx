@@ -2,17 +2,14 @@ import React from "react";
 import "./AboutMe.css";
 import { FaUserGraduate } from "react-icons/fa";
 import { assets } from "../../assets/assets";
-import nanPic2 from "../../assets/nanPic2.png";
 
 const AboutMe = () => {
-  console.log(assets.nanPic2);
-
   return (
     <div id="about">
       <h1>About me</h1>
       <div className="aboutMe-container">
         <div className="pic-container">
-          <img src={nanPic2} alt="AboutNan" className="about-pic" />
+          <img src={assets.aboutNan} alt="nan" />
         </div>
 
         <div className="detail-container">
